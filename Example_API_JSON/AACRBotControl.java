@@ -206,7 +206,7 @@ public class AACRBotControl {
         }
     }
     
-    public static String getDeviceID(String AACRUrl, String AAUsername, String AAAPIKey, String DeviceName, String authToken){
+    private static String getDeviceID(String AACRUrl, String AAUsername, String AAAPIKey, String DeviceName, String authToken){
 
         HttpURLConnection connection = null;
         
@@ -264,7 +264,7 @@ public class AACRBotControl {
         }
     }
     
-    public static String getBotID(String AACRUrl, String AAUsername, String AAAPIKey, String BotName, String authToken){
+    private static String getBotID(String AACRUrl, String AAUsername, String AAAPIKey, String BotName, String authToken){
         HttpURLConnection connection = null;
         
         //setup location for deploy
@@ -319,7 +319,7 @@ public class AACRBotControl {
         }
     }
     
-    public static String getAuthToken(String AACRUrl, String AAUsername, String AAAPIKey){
+    private static String getAuthToken(String AACRUrl, String AAUsername, String AAAPIKey){
         HttpURLConnection connection = null;
         //setup location for authentication
         AACRUrl = AACRUrl+"/v1/authentication";
